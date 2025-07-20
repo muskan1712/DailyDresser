@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, SafeAreaView } from 'react-native';
-import ChatWidget from '../components/ChatWidget';
+import React from "react";
+import { View, SafeAreaView } from "react-native";
+import ChatWidget from "../components/ChatWidget";
 
 const HomeScreen = () => {
   return (

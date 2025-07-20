@@ -1,6 +1,6 @@
- import React from 'react';
-import { StyleSheet, TouchableOpacity, Image } from 'react-native';
-import { useRouter } from 'expo-router'; // ✅ useRouter instead of useNavigation
+import React from "react";
+import { StyleSheet, TouchableOpacity, Image } from "react-native";
+import { useRouter } from "expo-router"; // ✅ useRouter instead of useNavigation
 
 export default function ChatbotButton() {
   const router = useRouter(); // ✅ hook
@@ -8,7 +8,7 @@ export default function ChatbotButton() {
   return (
     <TouchableOpacity
       style={styles.button}
-     // onPress={() => router.push('/chatbot-screen')} // ✅ Use .push and path string
+      // onPress={() => router.push('/chatbot-screen')} // ✅ Use .push and path string
     >
       {/* <Image
         source={require('../assets/images/chatbot.png')}
@@ -20,11 +20,11 @@ export default function ChatbotButton() {
 
 const styles = StyleSheet.create({
   button: {
-    position: 'absolute',
+    position: "absolute",
     bottom: 30,
     right: 20,
     zIndex: 100,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
     borderRadius: 30,
     padding: 6,
     elevation: 8,

@@ -15,9 +15,6 @@
       "permissions": [
         "CAMERA",
         "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE",
-        "CAMERA",
-        "READ_EXTERNAL_STORAGE",
         "WRITE_EXTERNAL_STORAGE"
       ],
       "adaptiveIcon": {
@@ -52,7 +49,9 @@
       "eas": {
         "projectId": "d82cf21c-7ea2-4b6d-aa5e-24f817e148cf"
       },
-      "BACKEND_URL": "https://mergedfolder-pq21.onrender.com/"  ,
+      "BACKEND_URL": "https://mergedfolder-pq21.onrender.com",
+      "BACKEND_CHATBOT_API": "https://mergedfolder-pq21.onrender.com"
+    },
     "owner": "22126011",
     "runtimeVersion": {
       "policy": "appVersion"

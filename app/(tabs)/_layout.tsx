@@ -1,24 +1,22 @@
-import { Ionicons } from '@expo/vector-icons';
-import { Tabs } from 'expo-router';
-import { LinearGradient } from 'expo-linear-gradient';
-import { View, StyleSheet } from 'react-native';
-
-
+import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
+import { LinearGradient } from "expo-linear-gradient";
+import { View, StyleSheet } from "react-native";
 
 export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
         tabBarStyle: styles.tabBar, // Applying gradient style to the tab bar
-        tabBarActiveTintColor: '#fff', // Active icon color
-        tabBarInactiveTintColor: '#D3D3D3', // Inactive icon color
+        tabBarActiveTintColor: "#fff", // Active icon color
+        tabBarInactiveTintColor: "#D3D3D3", // Inactive icon color
       }}
     >
       {/* Home Tab */}
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: "Home",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home-outline" size={size} color={color} />
           ),
@@ -29,7 +27,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
+          title: "Explore",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="compass-outline" size={size} color={color} />
           ),
@@ -40,7 +38,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="upload"
         options={{
-          title: 'Upload',
+          title: "Upload",
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="add-circle-outline" size={size} color={color} />
           ),
@@ -52,12 +50,12 @@ export default function TabLayout() {
 
 const styles = StyleSheet.create({
   tabBar: {
-    backgroundColor: 'transparent', // Make tabBar background transparent to show gradient
+    backgroundColor: "transparent", // Make tabBar background transparent to show gradient
     height: 60, // Adjust the height of the tab bar
     borderTopLeftRadius: 15, // Rounded corners for the tab bar
     borderTopRightRadius: 15, // Rounded corners for the tab bar
     paddingBottom: 10,
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOpacity: 0.1,
     shadowRadius: 5,
     elevation: 5,

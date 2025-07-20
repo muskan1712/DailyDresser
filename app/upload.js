@@ -1,26 +1,27 @@
-import { Picker } from '@react-native-picker/picker';
-import axios from 'axios';
-import * as ImagePicker from 'expo-image-picker';
-import { useState } from 'react';
+import { Picker } from "@react-native-picker/picker";
+import axios from "axios";
+import Constants from "expo-constants";
+import * as ImagePicker from "expo-image-picker";
+import { useState } from "react";
 import {
-    Alert,
-    Button,
-    Image,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
-} from 'react-native';
+  Alert,
+  Button,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
-const BACKEND_URL = 'https://ff265e29f5d2.ngrok-free.app'; // change this to your real backend
+const BACKEND_URL = Constants.expoConfig.extra.BACKEND_URL;
 
 const UploadClothesScreen = () => {
-  const [season, setSeason] = useState('');
-  const [gender, setGender] = useState('');
-  const [type, setType] = useState('');
-  const [subType, setSubType] = useState('');
+  const [season, setSeason] = useState("");
+  const [gender, setGender] = useState("");
+  const [type, setType] = useState("");
+  const [subType, setSubType] = useState("");
   const [images, setImages] = useState([]);
 
   const handleImageSelect = async () => {
@@ -34,7 +35,7 @@ const UploadClothesScreen = () => {
     if (!result.canceled) {
       const selected = result.assets || result.selected || [];
       if (images.length + selected.length > 10) {
-        Alert.alert('Limit Reached', 'You can only upload up to 10 images.');
+        Alert.alert("Limit Reached", "You can only upload up to 10 images.");
         return;
       }
       setImages([...images, ...selected]);
@@ -49,37 +50,40 @@ const UploadClothesScreen = () => {
 
   const handleSubmit = async () => {
     if (!season || !gender || !type || !subType || images.length === 0) {
-      Alert.alert('Error', 'Please fill all fields and upload at least one image.');
+      Alert.alert(
+        "Error",
+        "Please fill all fields and upload at least one image.",
+      );
       return;
     }
 
     const formData = new FormData();
     images.forEach((img, idx) => {
-      formData.append('images', {
+      formData.append("images", {
         uri: img.uri,
-        type: 'image/jpeg',
+        type: "image/jpeg",
         name: `photo_${idx}.jpg`,
       });
     });
 
-    formData.append('season', season);
-    formData.append('gender', gender);
-    formData.append('type', type);
-    formData.append('subType', subType);
+    formData.append("season", season);
+    formData.append("gender", gender);
+    formData.append("type", type);
+    formData.append("subType", subType);
 
     try {
       const res = await axios.post(`${BACKEND_URL}/upload-clothes`, formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
+        headers: { "Content-Type": "multipart/form-data" },
       });
-      Alert.alert('Success', 'Clothes uploaded successfully!');
+      Alert.alert("Success", "Clothes uploaded successfully!");
       setImages([]);
-      setSeason('');
-      setGender('');
-      setType('');
-      setSubType('');
+      setSeason("");
+      setGender("");
+      setType("");
+      setSubType("");
     } catch (err) {
       console.error(err);
-      Alert.alert('Upload Failed', 'Something went wrong.');
+      Alert.alert("Upload Failed", "Something went wrong.");
     }
   };
 
@@ -121,7 +125,9 @@ const UploadClothesScreen = () => {
       />
 
       <Button title="Select Images" onPress={handleImageSelect} />
-      <Text style={{ marginVertical: 10 }}>{images.length} images selected</Text>
+      <Text style={{ marginVertical: 10 }}>
+        {images.length} images selected
+      </Text>
 
       <View style={styles.imageContainer}>
         {images.map((img, idx) => (
@@ -140,28 +146,28 @@ const styles = StyleSheet.create({
   container: {
     padding: 16,
     paddingBottom: 60,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   title: {
     fontSize: 24,
-    fontWeight: '700',
+    fontWeight: "700",
     marginBottom: 20,
-    textAlign: 'center',
+    textAlign: "center",
   },
   label: {
-    fontWeight: '600',
+    fontWeight: "600",
     marginTop: 12,
   },
   input: {
     borderWidth: 1,
-    borderColor: '#aaa',
+    borderColor: "#aaa",
     padding: 8,
     marginTop: 4,
     borderRadius: 6,
   },
   imageContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    flexDirection: "row",
+    flexWrap: "wrap",
     marginTop: 12,
   },
   imageThumb: {
@@ -173,4 +179,3 @@ const styles = StyleSheet.create({
 });
 
 export default UploadClothesScreen;
-

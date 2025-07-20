@@ -1,23 +1,23 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-
-
-
+import {
+  DarkTheme,
+  DefaultTheme,
+  ThemeProvider,
+} from "@react-navigation/native";
+import { useFonts } from "expo-font";
+import { Stack } from "expo-router";
+import { StatusBar } from "expo-status-bar";
+import "react-native-reanimated";
+import { useColorScheme } from "@/hooks/useColorScheme";
 
 const PinkPurpleTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
-    background: '#D15B9B',  // Default background color for light mode
-    card: '#9B46E6',  // Purple card background color
-    text: '#fff',  // White text
-    border: '#fff',  // White border for buttons
-    notification: '#9B46E6',  // Purple notification color
+    background: "#D15B9B", // Default background color for light mode
+    card: "#9B46E6", // Purple card background color
+    text: "#fff", // White text
+    border: "#fff", // White border for buttons
+    notification: "#9B46E6", // Purple notification color
   },
 };
 
@@ -25,18 +25,18 @@ const DarkPinkPurpleTheme = {
   ...DarkTheme,
   colors: {
     ...DarkTheme.colors,
-    background: '#9B46E6',  // Dark mode background with purple
-    card: '#D15B9B',  // Pink card background color in dark mode
-    text: '#fff',  // White text
-    border: '#fff',  // White borders in dark mode
-    notification: '#D15B9B',  // Light pink notification color
+    background: "#9B46E6", // Dark mode background with purple
+    card: "#D15B9B", // Pink card background color in dark mode
+    text: "#fff", // White text
+    border: "#fff", // White borders in dark mode
+    notification: "#D15B9B", // Light pink notification color
   },
 };
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
   });
 
   if (!loaded) {
@@ -44,7 +44,7 @@ export default function RootLayout() {
     return null;
   }
 
-  const theme = colorScheme === 'dark' ? DarkPinkPurpleTheme : PinkPurpleTheme;
+  const theme = colorScheme === "dark" ? DarkPinkPurpleTheme : PinkPurpleTheme;
 
   return (
     <ThemeProvider value={theme}>
