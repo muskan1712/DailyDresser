@@ -1,4 +1,5 @@
 # 👗 Daily Dresser — Your AI Fashion Companion
+![WhatsApp Image 2025-07-21 at 12 14 17_9c8eb8c1](https://github.com/user-attachments/assets/24e3bd63-fc0e-4499-961c-f60e3dc53547)
 
 **Daily Dresser** is a smart virtual stylist built during the **Meesho "Scripted By Her" Hackathon** under the *Smart Fashion* theme. It's your intelligent wardrobe assistant designed to suggest, visualize, and even help you shop personalized outfits — all powered by **Generative AI** and **virtual try-on technology**.
 
@@ -138,6 +139,18 @@ Our backend powers the AI logic, wardrobe storage, chatbot handling, and virtual
   - `POST /tryon` – Virtual try-on image generation using VITON-HD
 - **MongoDB** – Stores user wardrobe data with metadata (type, style, season, etc.)
 - Integrated seamlessly with the **React Native Expo frontend**
+
+---
+## 🖼️ App Preview
+
+Here’s how Daily Dresser looks in action:
+![WhatsApp Image 2025-07-21 at 12 47 25_9a22d3f2](https://github.com/user-attachments/assets/47c247da-dac3-427d-8acc-e08aad0c26c5)
+![WhatsApp Image 2025-07-21 at 12 47 25_0d227cb2](https://github.com/user-attachments/assets/b13a405e-4418-4564-bc12-c419942b8e3f)
+![WhatsApp Image 2025-07-21 at 12 47 25_fb9b3274](https://github.com/user-attachments/assets/9f2a8cf9-7657-4234-955b-4cb7861086e8)
+![WhatsApp Image 2025-07-21 at 12 47 25_e1ef9dd8](https://github.com/user-attachments/assets/d3b46b99-cde1-42f3-9816-c89223caf3a8)
+
+
+> 🧠 Powered by Gemini AI | 👗 Virtual Try-On | 🎯 Personalized Recommendations
 
 ---
 
