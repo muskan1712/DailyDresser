@@ -1,146 +1,196 @@
-👗 DAILY DRESSER — Smart AI Fashion Assistant
+# 👗 Daily Dresser — Your AI Fashion Companion
 
-An AI-powered virtual stylist built for the Meesho Scripted By Her Hackathon — Daily Dresser is your intelligent wardrobe companion. From digital outfit suggestions to virtual try-ons, it's designed to help you look your best using clothes you already own.
+**Daily Dresser** is a smart virtual stylist built during the **Meesho "Scripted By Her" Hackathon** under the *Smart Fashion* theme. It's your intelligent wardrobe assistant designed to suggest, visualize, and even help you shop personalized outfits — all powered by **Generative AI** and **virtual try-on technology**.
 
-🧠 Powered by Gemini AI · ✨ Built with React Native · 🎯 Styled for Smart Fashion
-
-
----
-
-📸 What It Does
-
-Daily Dresser helps you make the most out of your wardrobe. Here's what it can do:
-
-📤 Upload your clothes as images
-
-🤖 Get personalized outfit recommendations using Gemini AI
-
-🧍 Try them on virtually (using the VITON-HD model)
-
-🛍 Shop complete looks via Meesho API
-
-🗂 Organize your digital closet (auto-tagged by gender, color, season, etc.)
-
-💬 Chat with a smart fashion bot for tips, suggestions & try-on links
-
-
+> 💡 “I have nothing to wear…” — Daily Dresser ends that struggle by making the most of what you already own.
 
 ---
 
-🎯 Why We Built It
-
-Eliminate outfit fatigue
-
-Reuse existing clothes creatively
-
-Reduce impulsive purchases
-
-Help users express themselves through fashion
-
-
+## 🧠 Powered by AI · 📱 Built with React Native · ✨ Styled for Smart Fashion
 
 ---
 
-🌐 Scope & Scalability
+## 📸 Features at a Glance
 
-Integratable into e-commerce platforms or stylist apps
-
-Try styles virtually before you buy (reduce return rates)
-
-Future scope: AR-based live try-on, body-type recommendations, accessory suggestions
-
-
-
----
-
-🧑‍💻 Tech Stack
-
-Layer	Technologies Used
-
-Frontend	React Native (Expo), Expo Router
-Styling	Tailwind CSS (via nativewind)
-Communication	Axios, React Navigation, Lottie
-ML Backend	Gemini API (chat + recommendations), VITON-HD for virtual try-on
-Media Tools	Expo Image Picker, Document Picker
-
-
+| Feature | Description |
+|--------|-------------|
+| 🧺 **Upload Your Clothes** | Digitize your wardrobe by uploading images of your garments |
+| 🤖 **AI Outfit Recommendations** | Get suggestions using Gemini AI based on occasion, season, and your style |
+| 🧍 **Virtual Try-On** | Try outfits on your own avatar using VITON-HD (high-res virtual try-on) |
+| 🛍️ **Shop Complete Looks** | Smart shopping suggestions via Meesho integration |
+| 🧠 **Auto Tagging** | Classifies items by type, color, gender, season, and style using AI |
+| 💬 **Fashion Chatbot** | Chat to get styling help, mix-and-match ideas, or curated links |
 
 ---
 
-🛠 Setup Instructions
+## 🧩 Problem We Solved
 
-1. Clone the Repository
+Every woman’s wardrobe dilemma:
+> “So many clothes but nothing to wear…”
 
-git clone https://github.com/yourusername/virtual-tryon-frontend.git
-cd virtual-tryon-frontendFrontend/
+### 💥 Challenges:
+- 🔄 Repeating the same outfits
+- 👕 Clothes get lost in clutter
+- 🛍 Impulsive buying due to decision fatigue
+- 🚫 No visual tool to try combinations
+- 😕 Limited self-expression
 
-2. Folder Structure
+### 💡 Our Solution:
+Daily Dresser lets you:
+- Upload your closet
+- Let AI generate outfit combos
+- Try them virtually
+- Shop what you need — **only what you need**
 
-├── app/            # Expo Router pages (chat, try-on, explore, etc.)
-├── components/     # UI components
-├── assets/         # Images, icons, animations
-├── utils/          # Axios instance, helpers
-├── context/        # App-wide contexts (e.g., chat history)
-└── app.config.js   # Expo configuration
+---
 
-3. Install Dependencies
+## 🧑‍💻 Tech Stack
 
+| Layer | Tech |
+|-------|------|
+| **Frontend** | React Native (Expo), Tailwind CSS (Nativewind), Lottie |
+| **ML Backend** | Gemini API (chat & outfit logic), VITON-HD (virtual try-on) |
+| **Backend** | Node.js, Express.js, MongoDB, Ngrok |
+| **Media Handling** | Expo Image Picker, Document Picker |
+| **Communication** | Axios, React Navigation |
+
+---
+
+## ⚙️ Architecture & Workflow
+
+[User Uploads Clothes]
+↓
+AI (Gemini API) Tags:
+- Type, Style, Color
+- Season, Gender
+↓
+Saved in MongoDB → Wardrobe Closet
+↓
+User Requests: "Outfit for college"
+↓
+AI Suggests + VITON Virtual Try-on
+↓
+User Tries, Shops or Shares!
+
+yaml
+Copy
+Edit
+
+---
+
+## 🧪 How It Works
+
+### 🧺 Upload
+- Upload your clothes via camera or gallery
+- No manual tagging — AI auto-classifies everything
+
+### 👀 Explore
+- Browse your personal closet
+- Filter by type, color, season, or style
+
+### 💬 Chatbot
+- Type: “Suggest outfit for brunch”
+- Gemini AI parses query → fetches matching looks from your closet
+- Displays ready-to-wear outfits, with shopping links if needed
+
+### 🧍‍♀️ Virtual Try-On
+- Select any two clothing items (top/bottom)
+- Upload your image
+- See yourself virtually styled via **VITON-HD**
+
+---
+
+## 🎯 Why It Matters
+
+- 🧠 Eliminate decision fatigue
+- 👗 Maximize wardrobe reuse
+- 💸 Reduce unnecessary purchases
+- 🌿 Promote sustainable fashion
+- 🧍‍♀️ Encourage body-positive self-expression
+
+---
+
+## 🔮 Scalability & Future Scope
+
+| Vision | Description |
+|--------|-------------|
+| 🛍️ Integration | Can plug into e-commerce like Meesho, Myntra, etc. |
+| 📦 AR Try-On | Real-time live try-on via phone camera |
+| 🧍‍♀️ Body-Type Analysis | Personalized suggestions by body shape |
+| 🧣 Accessories | Recommend jewelry, shoes, bags for complete look |
+| 🌐 Multilingual | Built for Bharat — adaptable to local styles |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+```bash
+git clone https://github.com/MuskanScripts/FrontEndMeesho.git
+cd FrontEndMeesho
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
+```
 
-⚠️ Using PowerShell? If you see this error:
+### 3. Run the App
 
-"npm.ps1 cannot be loaded because it is not digitally signed..."
-
-👉 Just use Command Prompt (cmd.exe) instead — this is a Windows security setting.
-
-4. Run the App
-
+```bash
 npx expo start
+```
 
-Scan the QR code from the terminal with your phone’s Expo Go app to preview it live.
-
-
----
-
-✅ Prerequisites
-
-Node.js ≥ 16
-
-npm ≥ 8
-
-Expo CLI (npx handles this)
-
-Expo Go (for Android/iOS preview)
-
-
+> 📱 Scan the QR with Expo Go app on your phone.
 
 ---
 
-🔗 Live Links
+## 📦 Folder Structure
 
-🎬 Demo Video: https://shorturl.at/l6jaF
-
-🖥️ Slide Deck: https://shorturl.at/9xOLG
-
-
-
----
-
-👥 Contributors
-
-Muskan — https://github.com/MuskanScripts
-
-Muskan Jain — https://github.com/muskan1712
-
-
+```bash
+├── app/            # Expo Router pages
+├── components/     # UI elements
+├── assets/         # Images & animations
+├── context/        # Chat + user data context
+├── utils/          # Axios instances & helpers
+└── app.config.js   # App metadata
+```
 
 ---
 
-📄 License
+## ✅ Prerequisites
+
+* Node.js ≥ 16
+* npm ≥ 8
+* Expo Go (Android/iOS)
+* Gemini API Key (for AI chat)
+* VITON server (Python backend)
+
+---
+
+## 📺 Demo & Links
+
+🎬 **Demo Video**: [https://shorturl.at/l6jaF](https://shorturl.at/l6jaF)
+🖥️ **Slide Deck**: [https://shorturl.at/9xOLG](https://shorturl.at/9xOLG)
+📂 **GitHub Code**:
+Frontend: [https://github.com/MuskanScripts/FrontEndMeesho](https://github.com/MuskanScripts/FrontEndMeesho)
+Backend (Merged): [https://github.com/MuskanScripts/mergedFolder](https://github.com/MuskanScripts/mergedFolder)
+
+---
+
+## 👩‍💻 Team BugBusters
+
+* **Muskan Jain** – [GitHub](https://github.com/muskan1712) – Team Leader, IET Lucknow
+* **Muskan** – [GitHub](https://github.com/MuskanScripts) – AI & React Native Dev, NIT Jalandhar
+
+---
+
+## 📄 License
 
 MIT License
 
-Copyright (c) 2025
+Copyright (c) 2025 Daily Dresser Team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -154,6 +204,11 @@ all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
+FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
 
+---
 
