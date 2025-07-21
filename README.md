@@ -144,12 +144,13 @@ Our backend powers the AI logic, wardrobe storage, chatbot handling, and virtual
 ## 🖼️ App Preview
 
 Here’s how Daily Dresser looks in action:
-![WhatsApp Image 2025-07-21 at 12 47 25_9a22d3f2](https://github.com/user-attachments/assets/47c247da-dac3-427d-8acc-e08aad0c26c5)
-![WhatsApp Image 2025-07-21 at 12 47 25_0d227cb2](https://github.com/user-attachments/assets/b13a405e-4418-4564-bc12-c419942b8e3f)
-![WhatsApp Image 2025-07-21 at 12 47 25_fb9b3274](https://github.com/user-attachments/assets/9f2a8cf9-7657-4234-955b-4cb7861086e8)
-![WhatsApp Image 2025-07-21 at 12 47 25_e1ef9dd8](https://github.com/user-attachments/assets/d3b46b99-cde1-42f3-9816-c89223caf3a8)
 
-
+<p align="center">
+  <img src="assets/screens/home.png" alt="Home Screen" width="250" />
+  <img src="assets/screens/chatbot.png" alt="Home Screen" width="250" />
+  <img src="assets/screens/upload.png" alt="Upload Screen" width="250" />
+  <img src="assets/screens/explore.png" alt="Explore Closet" width="250" />
+</p>
 > 🧠 Powered by Gemini AI | 👗 Virtual Try-On | 🎯 Personalized Recommendations
 
 ---
