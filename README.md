@@ -23,10 +23,6 @@
 | 💬 **Fashion Chatbot** | Chat to get styling help, mix-and-match ideas, or curated links |
 
 ---
-![WhatsApp Image 2025-07-21 at 12 47 30_df17a4e7](https://github.com/user-attachments/assets/e1dc68b6-971c-44a3-b1e7-e74d6a1c7bfe)
-![WhatsApp Image 2025-07-21 at 12 47 30_e81d1015](https://github.com/user-attachments/assets/2edfff93-1f7c-42ff-b7a9-4bb2ee093597)
-![WhatsApp Image 2025-07-21 at 12 47 29_f7e54f18](https://github.com/user-attachments/assets/d16ab785-8825-4ae6-a131-023bd1caae47)
-![WhatsApp Image 2025-07-21 at 12 47 29_93861d1b](https://github.com/user-attachments/assets/0d0aa7bb-1247-4418-8676-3c2ddf2af7ff)
 
 ## 🧩 Problem We Solved
 
