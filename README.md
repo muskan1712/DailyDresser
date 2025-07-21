@@ -192,7 +192,9 @@ npx expo start
 ## 📺 Demo & Links
 
 🎬 **Demo Video**: [https://shorturl.at/l6jaF](https://shorturl.at/l6jaF)
+
 🖥️ **Slide Deck**: [https://shorturl.at/9xOLG](https://shorturl.at/9xOLG)
+
 📂 **GitHub Code**:
 Frontend: [https://github.com/MuskanScripts/FrontEndMeesho](https://github.com/MuskanScripts/FrontEndMeesho)
 Backend (Merged): [https://github.com/MuskanScripts/mergedFolder](https://github.com/MuskanScripts/mergedFolder)
