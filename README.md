@@ -146,10 +146,10 @@ Our backend powers the AI logic, wardrobe storage, chatbot handling, and virtual
 Here’s how Daily Dresser looks in action:
 
 <p align="center">
-  <img src="assets/screens/home.png" alt="Home Screen" width="100" />
-  <img src="assets/screens/chatbot.png" alt="Chatbot Screen" width="100" />
-  <img src="assets/screens/upload.png" alt="Upload Screen" width="100" />
-  <img src="assets/screens/explore.png" alt="Explore Closet" width="100" />
+  <img src="./assets/screens/home.png" alt="Home Screen" width="100" />
+  <img src="./assets/screens/chatbot.png" alt="Chatbot Screen" width="100" />
+  <img src="./assets/screens/upload.png" alt="Upload Screen" width="100" />
+  <img src="./assets/screens/explore.png" alt="Explore Closet" width="100" />
 </p>
 > 🧠 Powered by Gemini AI | 👗 Virtual Try-On | 🎯 Personalized Recommendations
 
