@@ -205,12 +205,12 @@ npx expo start
 
 ## 📺 Demo & Links
 
-🎬 **Demo Video**: [https://shorturl.at/l6jaF](https://shorturl.at/l6jaF)
+🎬 **Demo Video**: [https://shorturl.at/ldkU7](https://shorturl.at/ldkU7)
 
-🖥️ **Slide Deck**: [https://shorturl.at/9xOLG](https://shorturl.at/9xOLG)
+🖥️ **Slide Deck**: [https://shorturl.at/QNuHy](https://shorturl.at/QNuHy)
 
 📂 **GitHub Code**:
-Frontend: [https://github.com/MuskanScripts/FrontEndMeesho](https://github.com/MuskanScripts/FrontEndMeesho)
+Frontend: [https://github.com/MuskanScripts/FrontEndMeesho]()
 
 Backend (Merged): [https://github.com/MuskanScripts/mergedFolder](https://github.com/MuskanScripts/mergedFolder)
 
@@ -222,11 +222,3 @@ Backend (Merged): [https://github.com/MuskanScripts/mergedFolder](https://github
 * **Muskan** – [GitHub](https://github.com/MuskanScripts) – AI & React Native Dev, NIT Jalandhar
 
 ---
-
-
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING
-FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-DEALINGS IN THE SOFTWARE.
-
----
-
