@@ -210,9 +210,7 @@ npx expo start
 🖥️ **Slide Deck**: [https://shorturl.at/QNuHy](https://shorturl.at/QNuHy)
 
 📂 **GitHub Code**:
-Frontend: [https://github.com/MuskanScripts/FrontEndMeesho]()
-
-Backend (Merged): [https://github.com/MuskanScripts/mergedFolder](https://github.com/MuskanScripts/mergedFolder)
+Frontend & Merged Backend : [https://github.com/muskan1712/DailyDresser.git](https://github.com/muskan1712/DailyDresser.git)
 
 ---
 
