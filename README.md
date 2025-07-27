@@ -212,6 +212,8 @@ npx expo start
 📂 **GitHub Code**:
 Frontend & Merged Backend : [https://github.com/muskan1712/DailyDresser.git](https://github.com/muskan1712/DailyDresser.git)
 
+ 🌐 **Deployed app / hosted instance link** : [https://frontmeesho.netlify.app/](https://frontmeesho.netlify.app/)
+
 ---
 
 ## 👩‍💻 Team BugBusters
